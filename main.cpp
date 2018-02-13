@@ -15,7 +15,12 @@ int main()
 
   cout<< "What is your Last name? \n";
   cin>>lastname;
+    
+  string word1 = first;
+  string word2 = lastname;
+  cout<< "Welcome, "<<word1[0] <<"."<<word2[0]<<"." <<" here is your fortune...";
 
+  cout<<endl;
   //tell fortune
 
   return 0;
