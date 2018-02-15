@@ -13,23 +13,22 @@ int main()
     int len;
 
   //get user input
-  cout<< "What is your First name?\n";
+  cout<< "What is your first name?\n";
   cin>> first;
 
-  cout<< "What is your Last name? \n";
+  cout<< "What is your last name?\n";
   cin>>lastname;
     
   string word1 = first;
   string word2 = lastname;
   char letter = first[0];
-  cout<< "Welcome, "<<word1[0] <<"."<<word2[0]<<"." <<" here is your fortune...";
-  cout<<endl;
+  cout<< "Welcome, "<<word1[0] <<"."<<word2[0]<<".," <<" here is your fortune...\n";
   //tell fortune
-  cout<< "Your first name has "<<first.length()<<" letters"<<endl;
   
   lucky = first.length();
   
   len = lastname.length();
+  char last = word2[len-1];
   
   cout<< "your lucky number is "<< lucky<<endl;
   
@@ -48,11 +47,11 @@ int main()
   }
   
   if(word2[len-1]== 'a' || word2[len-1]== 'e' || word2[len-1]== 'i' || word2[len-1]== 'o' || word2[len-1]=='u' 
-  ||  word2[len-1]=='A' || word2[len-1]=='E' || word2[len-1]=='I' || word2[len-1]== 'O' || 'U');
+  ||  word2[len-1]=='A' || word2[len-1]=='E' || word2[len-1]=='I' || word2[len-1]== 'O' ||word2[len-1] == 'U')
   {
     cout<<"you have already met your true love.\n";
   }
-  cout<<"have a good day\n";
+  cout<<"have a good day!\n";
 
   return 0;
 }
